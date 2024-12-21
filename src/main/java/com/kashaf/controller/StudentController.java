@@ -38,7 +38,7 @@ public class StudentController {
        /* studentInDb.setName(student.getName());
         studentInDb.setContact(student.getContact());
         studentInDb.setEmail(student.getEmail());
-        studentRepository.save(studentInDb); */
+        studentRepository.save(studentInDb);  */
 
         BeanUtils.copyProperties(student, studentInDb, "id");
         studentRepository.save(studentInDb);
